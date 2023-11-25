@@ -1,13 +1,13 @@
-name: CI
+name: Lint dbdocs
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
 jobs:
-  build:
-    name: Build dbdocs
+  lint:
+    name: Lint dbdocs
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
@@ -26,8 +26,3 @@ jobs:
 
       - name: Validate dbdocs
         run: dbdocs validate nemmy.dbml
-
-      - name: Update dbdocs project
-        env:
-          DBDOCS_TOKEN: ${{ secrets.DBDOCS_TOKEN }}
-        run: dbdocs build ./nemmy.dbml

@@ -1,0 +1,12 @@
+version: "3"
+
+tasks:
+  lint:
+    cmds:
+      - dbdocs validate nemmy.dbml
+    silent: true
+
+  deploy:
+    cmds:
+      - dbdocs build nemmy.dbml
+    silent: true
