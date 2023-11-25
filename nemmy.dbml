@@ -27,6 +27,7 @@ Table subjects {
 Table records {
   id int [pk, increment]
   subject_id int [not null]
+  started_at timestamp [not null]
   duration int [not null, note: '単位は秒']
   comment text
   note: '勉強時間を管理する'
