@@ -25,9 +25,9 @@ jobs:
         run: dbdocs
 
       - name: Validate dbdocs
-        run: dbdocs validate nemmy.dbml
+        run: dbdocs validate database.dbml
 
       - name: Update dbdocs project
         env:
           DBDOCS_TOKEN: ${{ secrets.DBDOCS_TOKEN }}
-        run: dbdocs build ./nemmy.dbml
+        run: dbdocs build ./database.dbml

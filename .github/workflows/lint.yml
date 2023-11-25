@@ -25,4 +25,4 @@ jobs:
         run: dbdocs
 
       - name: Validate dbdocs
-        run: dbdocs validate nemmy.dbml
+        run: dbdocs validate database.dbml

@@ -3,10 +3,10 @@ version: "3"
 tasks:
   lint:
     cmds:
-      - dbdocs validate nemmy.dbml
+      - dbdocs validate database.dbml
     silent: true
 
   deploy:
     cmds:
-      - dbdocs build nemmy.dbml
+      - dbdocs build database.dbml
     silent: true
