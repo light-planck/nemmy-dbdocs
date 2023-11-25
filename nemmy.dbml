@@ -32,5 +32,5 @@ Table records {
   note: '勉強時間を管理する'
 }
 
-Ref: users.id < subjects.user_id
+Ref: users.id < subjects.us er_id
 Ref: subjects.id <> records.subject_id
