@@ -1,7 +1,7 @@
-Project Ecommerce {
+Project nemmy {
   database_type: 'PostgreSQL'
   Note: '''
-    # Ecommerce Database
+    # nemmy Database
     **markdown content here**
   '''
 }
