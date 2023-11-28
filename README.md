@@ -6,7 +6,8 @@
 
 ## Requirement
 
-[Task](https://taskfile.dev/)
+- [dbdocs](https://dbdocs.io/)
+- [Task](https://taskfile.dev/)
 
 ## lint
 
