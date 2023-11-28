@@ -34,4 +34,4 @@ Table records {
 }
 
 Ref: users.id < subjects.user_id
-Ref: subjects.id <> records.subject_id
+Ref: subjects.id < records.subject_id
